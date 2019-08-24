@@ -72,12 +72,17 @@
         width: 60%;
     }
 }
-
+*/
 @media (min-width: 1200px) { 
     #maps{
-        width: 100%;
+        width: 120%;
     }
-} */
+}
+@media (min-width: 1400px) { 
+    #maps{
+        width: 150%;
+    }
+}
 
 @media (min-width:960px) {
     .editor-block-list__layout .reusable-block-edit-panel {
