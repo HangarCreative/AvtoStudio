@@ -83,6 +83,11 @@
         width: 150%;
     }
 }
+@media (min-width: 1600px) { 
+    #maps{
+        width: 160%;
+    }
+}
 
 @media (min-width:960px) {
     .editor-block-list__layout .reusable-block-edit-panel {
