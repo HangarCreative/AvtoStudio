@@ -82,6 +82,7 @@
             })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
         }(window, document, window._wpemojiSettings);
     </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -782,6 +783,12 @@
             -o-transition: all 0.3s ease-in-out 0s;
             -webkit-transition: all 0.3s ease-in-out 0s;
         }
+
+        #price-container{
+            width: 33%;
+            /* height: 530px; */
+            /* margin: 0; */
+        }
         
         @media (max-width: 320px) {}
         
@@ -1197,23 +1204,12 @@
                                                 </div>
                                             </div>
                                             <div class="vc_row wpb_row vc_row-fluid" style="background-color:rgb(255,255,255);background-color:rgba(255,255,255,0.01);">
-                                                <div class="wpb_column vc_column_container vc_col-sm-2">
+                                                <div class="wpb_column vc_column_container vc_col-12">
                                                     <div class="vc_column-inner ">
                                                         <div class="wpb_wrapper"></div>
                                                     </div>
                                                 </div>
-                                                <div class="wpb_column vc_column_container vc_col-sm-8">
-                                                    <div class="vc_column-inner ">
-                                                        <div class="wpb_wrapper">
-                                                            <div class="wpb_text_column wpb_content_element ">
-                                                                <div class="wpb_wrapper">
-                                                                    <p>Z leti se na vozilu obrabijo žarometi, ki postanejo motni oziroma megleni in nam s tem zmanjšajo vidljivost na cesti. K obrabi močno prispevajo vremenski pojavi (sonce, kisli dež) ter razmere na cesti (kamenje, sol), zaradi katerih žarometi na našem vozilu porumenijo, postanejo motni in s tem neprimerni za vožnjo.Poleg tega pa je obnova žarometov veliko cenejša kot nakup novih.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="wpb_column vc_column_container vc_col-sm-2">
+                                                <div class="wpb_column vc_column_container vc_col-12">
                                                     <div class="vc_column-inner ">
                                                         <div class="wpb_wrapper">
                                                             <div class="wpb_raw_code wpb_content_element wpb_raw_html">
@@ -1222,8 +1218,8 @@
                                                                         <section>
                                                                             <div class="container">
                                                                                 <!--BLOCK ROW START-->
-                                                                                <div class="row">
-                                                                                    <div class="col-md-4">
+                                                                                <div class="row justify-content-center">
+                                                                                    <div id="price-container" class="col-5">
                                                                                         <!--PRICE CONTENT START-->
                                                                                         <div class="generic_content clearfix">
                                                                                             <!--HEAD PRICE DETAIL START-->
@@ -1262,6 +1258,18 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="wpb_column vc_column_container vc_col-12">
+                                                    <div class="vc_column-inner ">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="wpb_text_column wpb_content_element ">
+                                                                <div class="wpb_wrapper">
+                                                                    <p>Z leti se na vozilu obrabijo žarometi, ki postanejo motni oziroma megleni in nam s tem zmanjšajo vidljivost na cesti. K obrabi močno prispevajo vremenski pojavi (sonce, kisli dež) ter razmere na cesti (kamenje, sol), zaradi katerih žarometi na našem vozilu porumenijo, postanejo motni in s tem neprimerni za vožnjo.Poleg tega pa je obnova žarometov veliko cenejša kot nakup novih.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
