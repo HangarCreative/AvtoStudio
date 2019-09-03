@@ -82,6 +82,7 @@
             })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
         }(window, document, window._wpemojiSettings);
     </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -782,6 +783,12 @@
             -o-transition: all 0.3s ease-in-out 0s;
             -webkit-transition: all 0.3s ease-in-out 0s;
         }
+
+        #price-container{
+            width: 33%;
+            /* height: 530px; */
+            /* margin: 0; */
+        }
         
         @media (max-width: 320px) {}
         
@@ -918,7 +925,7 @@
             display: table;
             height: 2px;
             background: #ddd;
-            margin: 50px auto;
+            /* margin: 50px auto; */
             line-height: 2px;
         }
         
@@ -1197,12 +1204,12 @@
                                                 </div>
                                             </div>
                                             <div class="vc_row wpb_row vc_row-fluid" style="background-color:rgb(255,255,255);background-color:rgba(255,255,255,0.01);">
-                                                <div class="wpb_column vc_column_container vc_col-sm-2">
+                                                <div class="wpb_column vc_column_container vc_col-12">
                                                     <div class="vc_column-inner ">
                                                         <div class="wpb_wrapper"></div>
                                                     </div>
                                                 </div>
-                                                <div class="wpb_column vc_column_container vc_col-sm-2">
+                                                <div class="wpb_column vc_column_container vc_col-12">
                                                     <div class="vc_column-inner ">
                                                         <div class="wpb_wrapper">
                                                             <div class="wpb_raw_code wpb_content_element wpb_raw_html">
@@ -1211,8 +1218,8 @@
                                                                         <section>
                                                                             <div class="container">
                                                                                 <!--BLOCK ROW START-->
-                                                                                <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                <div class="row justify-content-center">
+                                                                                    <div id="price-container" class="col-10 col-md-4">
                                                                                         <!--PRICE CONTENT START-->
                                                                                         <div class="generic_content clearfix">
                                                                                             <!--HEAD PRICE DETAIL START-->
@@ -1243,7 +1250,7 @@
                                                                                         </div>
                                                                                         <!--//PRICE CONTENT END-->
                                                                                     </div>
-                                                                                    <div class="col-md-6">
+                                                                                    <div id="price-container" class="col-10 col-md-4">
                                                                                         <!--PRICE CONTENT START-->
                                                                                         <div class="generic_content clearfix">
                                                                                             <!--HEAD PRICE DETAIL START-->
@@ -1252,12 +1259,22 @@
                                                                                                 <div class="generic_head_content clearfix">
                                                                                                     <!--HEAD START-->
                                                                                                     <div class="head_bg"></div>
-                                                                                                    <div class="head"> <span>Homologacija</span></div>
+                                                                                                    <div class="head"> <span>Cena</span></div>
                                                                                                     <!--//HEAD END-->
                                                                                                 </div>
                                                                                                 <!--//HEAD CONTENT END-->
                                                                                                 <!--PRICE START-->
                                                                                                 <div class="generic_price_tag clearfix"> <span class="price"><span class="currency">30€</span> </span>
+                                                                                                </div>
+                                                                                                <!--//PRICE END-->
+                                                                                                <div class="generic_feature_list">
+                                                                                                    <ul>
+                                                                                                        <li>
+                                                                                                            <br /><span>Homologacija</span></li>
+                                                                                                        <li>
+                                                                                                            <br /><span></span></li>
+                                                                                                        <br/>
+                                                                                                    </ul>
                                                                                                 </div>
                                                                                             </div>
                                                                                             <!--//HEAD PRICE DETAIL END-->
@@ -1275,7 +1292,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="wpb_column vc_column_container vc_col-sm-8">
+                                                <div class="wpb_column vc_column_container vc_col-sm-12">
                                                     <div class="vc_column-inner ">
                                                         <div class="wpb_wrapper">
                                                             <div class="wpb_text_column wpb_content_element ">
@@ -1544,6 +1561,10 @@
     <div id="cookie-notice" role="banner" class="cn-bottom bootstrap" style="color: #fff; background-color: #000;">
         <div class="cookie-notice-container"><span id="cn-notice-text">Spletna stran www.avtostudio.si uporablja piškotke z namenom zagotavljanja kvalitetne spletne storitve in funkcionalnosti, ki jih brez piškotkov ne bi mogli nuditi. S klikom na gumb Strinjam se soglašate z njihovo namestitvijo.</span><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button bootstrap button">Strinjam se</a><a href="../politika-zasebnosti/index.html" target="_blank" id="cn-more-info" class="cn-more-info cn-button bootstrap button">Politika zasebnosti</a></div>
     </div>
+    <!-- this may brake the site, remove if necesarry -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
