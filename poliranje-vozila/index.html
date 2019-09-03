@@ -82,6 +82,7 @@
             })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
         }(window, document, window._wpemojiSettings);
     </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -782,6 +783,12 @@
             -o-transition: all 0.3s ease-in-out 0s;
             -webkit-transition: all 0.3s ease-in-out 0s;
         }
+
+        #price-container{
+            width: 33%;
+            /* height: 530px; */
+            /* margin: 0; */
+        }
         
         @media (max-width: 320px) {}
         
@@ -1201,32 +1208,12 @@
                                                 </div>
                                             </div>
                                             <div class="vc_row wpb_row vc_row-fluid" style="background-color:rgb(255,255,255);background-color:rgba(255,255,255,0.01);">
-                                                <div class="wpb_column vc_column_container vc_col-sm-2">
+                                                <div class="wpb_column vc_column_container vc_col-12">
                                                     <div class="vc_column-inner ">
                                                         <div class="wpb_wrapper"></div>
                                                     </div>
                                                 </div>
-                                                <div class="wpb_column vc_column_container vc_col-sm-8">
-                                                    <div class="vc_column-inner ">
-                                                        <div class="wpb_wrapper">
-                                                            <div class="wpb_text_column wpb_content_element ">
-                                                                <div class="wpb_wrapper">
-                                                                    <p>Poliranje je postopek, ki je namenjen odstranjevanju nepravilnosti na barvi-laku in izboljšanju sijaja ter predstavlja predpripravo za nanos zaščite barve-laka na vozilu. Vozila so vsakodnevno izpostavljena zunanjim vplivom, kar povzroča različne nepravilnosti na barvi-laku, kot so vrtinčne oznake, praske, vodne pike in podobno.</p>
-                                                                    <p>Poliramo s profesionalnimi polirnimi stroji in pastami priznanih proizvajalcev. S poliranjem bomo na vozilu odstranili nepravilnosti na barvi-laku in mu povrnili visoko stopnjo sijaja. Na koncu pa dodamo še zaščitni premaz, da bi vozilo tak izgled ohranilo kar se da dolgo.</p>
-                                                                    <h4><strong>Poliranje obsega:</strong></h4>
-                                                                    <ul>
-                                                                        <li>predpranje z aktivno peno</li>
-                                                                        <li>detajlno pranje vozila</li>
-                                                                        <li>dekontaminacijo laka (odstranjevanje zračne rje in katrana)</li>
-                                                                        <li>poliranje (enostopenjsko, dvostopenjsko, tristopenjsko)</li>
-                                                                        <li>zaščito laka (vosek-obstojnost do 3 mesecev ob pravilnem vzdrževanju)</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="wpb_column vc_column_container vc_col-sm-2">
+                                                <div class="wpb_column vc_column_container vc_col-12">
                                                     <div class="vc_column-inner ">
                                                         <div class="wpb_wrapper">
                                                             <div class="wpb_raw_code wpb_content_element wpb_raw_html">
@@ -1235,8 +1222,8 @@
                                                                         <section>
                                                                             <div class="container">
                                                                                 <!--BLOCK ROW START-->
-                                                                                <div class="row">
-                                                                                    <div class="col-md-4">
+                                                                                <div class="row justify-content-center justify-content-md-around">
+                                                                                    <div id="price-container" class="col-5 col-md-3">
                                                                                         <!--PRICE CONTENT START-->
                                                                                         <div class="generic_content clearfix">
                                                                                             <!--HEAD PRICE DETAIL START-->
@@ -1250,18 +1237,82 @@
                                                                                                 </div>
                                                                                                 <!--//HEAD CONTENT END-->
                                                                                                 <!--PRICE START-->
-                                                                                                <div class="generic_price_tag clearfix"> <span class="price"> <span class="month">OD</span> <span class="currency">100€</span> </span>
+                                                                                                <div class="generic_price_tag clearfix"> <span class="price"> <span class="month">OD</span> <span class="currency">150€</span> </span>
+                                                                                                </div>
+                                                                                                <!--//PRICE END-->
+                                                                                                <div class="generic_feature_list">
+                                                                                                        <ul>
+                                                                                                            <li>Vrsta Dela
+                                                                                                                <br /><span>Express poliranje</span></li>
+                                                                                                            <li>Čas trajanja
+                                                                                                                <br /><span>1 dan</span></li>
+                                                                                                        </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <!--//HEAD PRICE DETAIL END-->
+                                                                                            <div class="generic_price_btn clearfix"> <a class="" href="../kontakt/index.html">KLIČI</a></div>
+                                                                                        </div>
+                                                                                        <!--//PRICE CONTENT END-->
+                                                                                    </div>
+                                                                                    <div id="price-container" class="col-5 col-md-3">
+                                                                                        <!--PRICE CONTENT START-->
+                                                                                        <div class="generic_content clearfix">
+                                                                                            <!--HEAD PRICE DETAIL START-->
+                                                                                            <div class="generic_head_price clearfix">
+                                                                                                <!--HEAD CONTENT START-->
+                                                                                                <div class="generic_head_content clearfix">
+                                                                                                    <!--HEAD START-->
+                                                                                                    <div class="head_bg"></div>
+                                                                                                    <div class="head"> <span>Cena</span></div>
+                                                                                                    <!--//HEAD END-->
+                                                                                                </div>
+                                                                                                <!--//HEAD CONTENT END-->
+                                                                                                <!--PRICE START-->
+                                                                                                <div class="generic_price_tag clearfix"> <span class="price"> <span class="month">OD</span> <span class="currency">280€</span> </span>
                                                                                                 </div>
                                                                                                 <!--//PRICE END-->
                                                                                                 <div class="generic_feature_list">
                                                                                                     <ul>
+                                                                                                        <li>Vrsta Dela
+                                                                                                            <br /><span>Classic poliranje</span></li>
                                                                                                         <li>Čas trajanja
-                                                                                                            <br/><span>8h</span></li>
+                                                                                                            <br /><span>2-3 dni</span></li>
                                                                                                     </ul>
                                                                                                 </div>
                                                                                             </div>
                                                                                             <!--//HEAD PRICE DETAIL END-->
-                                                                                            <div class="generic_price_btn clearfix"> <a class="" href="../kontakt/index.html">KONTAKT</a></div>
+                                                                                            <div class="generic_price_btn clearfix"> <a class="" href="../kontakt/index.html">KLIČI</a></div>
+                                                                                        </div>
+                                                                                        <!--//PRICE CONTENT END-->
+                                                                                    </div>
+                                                                                    <div id="price-container" class="col-5 col-md-3">
+                                                                                        <!--PRICE CONTENT START-->
+                                                                                        <div class="generic_content clearfix">
+                                                                                            <!--HEAD PRICE DETAIL START-->
+                                                                                            <div class="generic_head_price clearfix">
+                                                                                                <!--HEAD CONTENT START-->
+                                                                                                <div class="generic_head_content clearfix">
+                                                                                                    <!--HEAD START-->
+                                                                                                    <div class="head_bg"></div>
+                                                                                                    <div class="head"> <span>Cena</span></div>
+                                                                                                    <!--//HEAD END-->
+                                                                                                </div>
+                                                                                                <!--//HEAD CONTENT END-->
+                                                                                                <!--PRICE START-->
+                                                                                                <div class="generic_price_tag clearfix"> <span class="price"> <span class="month">OD</span> <span class="currency">500€</span> </span>
+                                                                                                </div>
+                                                                                                <!--//PRICE END-->
+                                                                                                <div class="generic_feature_list">
+                                                                                                    <ul>
+                                                                                                        <li>Vrsta Dela
+                                                                                                            <br /><span>Premium poliranje</span></li>
+                                                                                                        <li>Čas trajanja
+                                                                                                            <br /><span>4-5 dni</span></li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <!--//HEAD PRICE DETAIL END-->
+                                                                                            <div class="generic_price_btn clearfix"> <a class="" href="../kontakt/index.html">KLIČI</a></div>
                                                                                         </div>
                                                                                         <!--//PRICE CONTENT END-->
                                                                                     </div>
@@ -1275,6 +1326,48 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="wpb_column vc_column_container vc_col-12">
+                                                    <div class="vc_column-inner ">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="wpb_text_column wpb_content_element ">
+                                                                <div class="wpb_wrapper">
+                                                                    <p>Poliranje je postopek, ki je namenjen odstranjevanju nepravilnosti na barvi-laku in izboljšanju sijaja ter predstavlja predpripravo za nanos zaščite barve-laka na vozilu. Vozila so vsakodnevno izpostavljena zunanjim vplivom, kar povzroča različne nepravilnosti na barvi-laku, kot so vrtinčne oznake, praske, vodne pike in podobno.</p>
+                                                                    <p>Poliramo s profesionalnimi polirnimi stroji in pastami priznanih proizvajalcev. S poliranjem bomo na vozilu odstranili nepravilnosti na barvi-laku in mu povrnili visoko stopnjo sijaja. Na koncu pa dodamo še zaščitni premaz, da bi vozilo tak izgled ohranilo kar se da dolgo.</p>
+                                                                    <h4><strong>Express poliranje obsega:</strong></h4>
+                                                                    <p>Je enostopenjsko poliranje, ki vašemu vozilu povrne sijaj in odstrani manjše nepravilnosti v laku.</p>
+                                                                    <ul>
+                                                                        <li>predpranje z aktivno peno</li>
+                                                                        <li>detajlno pranje vozila</li>
+                                                                        <li>dekontaminacijo laka (odstranjevanje zračne rje in katrana)</li>
+                                                                        <li>poliranje (enostopenjsko, dvostopenjsko, tristopenjsko)</li>
+                                                                        <li>zaščito laka (vosek-obstojnost do 3 mesecev ob pravilnem vzdrževanju)</li>
+                                                                    </ul>
+                                                                    <h4><strong>Classic poliranje obsega:</strong></h4>
+                                                                    <p>Je dvostopenjsko poliranje z katerim dosežemo veliko korekcijo laka in visoko stopnjo sijaja.</p>
+                                                                    <ul>
+                                                                        <li>predpranje z aktivno peno</li>
+                                                                        <li>detajlno pranje vozila</li>
+                                                                        <li>dekontaminacijo laka (odstranjevanje zračne rje in katrana)</li>
+                                                                        <li>zaščito nelakiranih delov</li>
+                                                                        <li>poliranje (enostopenjsko, dvostopenjsko, tristopenjsko)</li>
+                                                                        <li>zaščito laka (vosek-obstojnost do 6 mesecev ob pravilnem vzdrževanju)</li>
+                                                                    </ul>
+                                                                    <h4><strong>Premium poliranje obsega:</strong></h4>
+                                                                    <p>Je večstopenjsko poliranje, ki zagotavlja najboljšo možno korekcijo laka ter neverjeten sijaj.</p>
+                                                                    <ul>
+                                                                        <li>predpranje z aktivno peno</li>
+                                                                        <li>detajlno pranje vozila</li>
+                                                                        <li>dekontaminacijo laka (odstranjevanje zračne rje in katrana)</li>
+                                                                        <li>zaščito nelakiranih delov</li>
+                                                                        <li>poliranje (večstopenjsko)</li>
+                                                                        <li>zaščito laka (vosek,keramična zaščita…)</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
                                             <div class="vc_row wpb_row vc_row-fluid" style="">
                                                 <div class="wpb_column vc_column_container vc_col-sm-12">
