@@ -792,6 +792,59 @@
             /* height: 530px; */
             /* margin: 0; */
         }
+
+        /* Popup container */
+        .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        }
+
+        /* The actual popup (appears on top) */
+        .popup .popuptext {
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+        }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+        }
+
+        /* Toggle this class when clicking on the popup container (hide and show the popup) */
+        .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s
+        }
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+        from {opacity: 0;} 
+        to {opacity: 1;}
+        }
+
+        @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+        }
         
         @media (max-width: 320px) {}
         
@@ -1249,7 +1302,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                             <!--//HEAD PRICE DETAIL END-->
-                                                                                            <div class="generic_price_btn clearfix"> <a class="" href="tel: +386 41969648">KLIČI</a></div>
+                                                                                            <div id="priceButton1" class="generic_price_btn popup" onclick="myFunction1()"> <span class="popuptext" id="myPopup1">Tel: +386 40 152 162</span> <a id="mobileNumber1" href="tel: +386 40 152 162">KLIČI</a></div>
                                                                                         </div>
                                                                                         <!--//PRICE CONTENT END-->
                                                                                     </div>
@@ -1281,7 +1334,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                             <!--//HEAD PRICE DETAIL END-->
-                                                                                            <div class="generic_price_btn clearfix"> <a class="" href="tel: +386 41969648">KLIČI</a></div>
+                                                                                            <div id="priceButton2" class="generic_price_btn popup" onclick="myFunction2()"> <span class="popuptext" id="myPopup2">Tel: +386 40 152 162</span> <a class="" href="tel: +386 40 152 162">KLIČI</a></div>
                                                                                         </div>
                                                                                         <!--//PRICE CONTENT END-->
                                                                                     </div>
@@ -1487,6 +1540,29 @@
         <!-- end bodychild -->
     </div>
     <!-- end outercontainer -->
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction1() {
+            var popup = document.getElementById("myPopup1");
+            popup.classList.toggle("show");
+        }
+        // When the user clicks on <div>, open the popup
+        function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show");
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+    <script>
+        var md = new MobileDetect(window.navigator.userAgent);
+        if (!md.mobile()) {
+            document.getElementById("mobileNumber1").setAttribute("href", "javascript:void(0)");
+            document.getElementById("mobileNumber2").setAttribute("href", "javascript:void(0)");
+        }else{
+            document.getElementById("priceButton1").setAttribute("onClick", "javascript:void(0)");
+            document.getElementById("priceButton2").setAttribute("onClick", "javascript:void(0)");
+        }
+    </script>
     <script type="text/javascript">
         function revslider_showDoubleJqueryError(sliderID) {
             var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
